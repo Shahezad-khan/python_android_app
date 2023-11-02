@@ -1,0 +1,4 @@
+1) add option for the description box in the camera field
+2) create and connect data base for the app 
+3) create cstome ui for the camera module and for the photo gellery option 
+4) finalize the app with all the requirements
