@@ -1,0 +1,35 @@
+<CameraLayout>:
+    orientation: 'vertical'
+    
+    TextInput:
+        id: description_input
+        hint_text: 'Enter photo description'
+        multiline: False
+        size_hint_y: None
+        height: dp(40)
+        font_size: sp(16)
+        padding: dp(10)
+
+    Camera:
+        id: camera
+        resolution: (640, 480)
+        play: True
+
+    Button:
+        text: 'Capture'
+        size_hint_y: None
+        height: dp(60)
+        font_size: sp(20)
+        on_press: root.capture()
+
+    Button:
+        text: 'View Photos'
+        size_hint_y: None
+        height: dp(60)
+        font_size: sp(20)
+        on_press: root.view_photos()
+
+    Image:
+        id: image_preview
+        size_hint_y: None
+        height: dp(200)
